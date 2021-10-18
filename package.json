@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "invoke-local": "sls invoke local -f hero-insert --path src/request-mock/hero-insert.json",
+    "invoke": "sls invoke -f hero-insert --path src/request-mock/hero-insert.json",
+    "invoke-trigger": "sls invoke local -f hero-trigger --path src/request-mock/hero-trigger.json"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "aws-sdk": "^2.1009.0",
+    "uuid": "^8.3.2"
+  },
+  "name": "trigger-dynamodb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
